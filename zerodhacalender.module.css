@@ -1,0 +1,57 @@
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(12, 3fr);
+    grid-template-rows: auto;
+    padding: 0 0 0 2em;
+}
+
+.calendar_month {
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    flex-wrap: wrap;
+    transform: translateY(17px);
+    font-weight: 900;
+}
+
+.calendar_day {
+   height: 25px;
+}
+.zboxnodate {
+    height: 25px;
+}
+
+.zboxdate {
+    height: 25px;
+}
+
+.zboxdate:before {
+    content: "....";
+    background: red;
+    color: red;
+    width: 100%;
+}
+.months {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-left: 2em;
+    font-weight: bold;
+    transform: translateY(13px);
+}
+
+.magzi {
+    position: relative;
+}
+
+.daywise {
+    position: absolute;
+    padding-top: .8em;
+    left: 10px;
+    font-weight: bold;
+}
+
+.day {
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
